@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,600;0,700;1,100;1,600;1,700&family=Merriweather:ital,wght@0,300;1,300&display=swap");
+:root{
+    --titulo:"Barlow, Sans-Serif"
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow',sans-serif;;
+    background-color : #fff;
+}
+.logo{
+    max-width: 1920px;
+    width: 100%;    
+    height: 9vh;
+    background-image: url(/Public/img/16a9/logo.jpg);
+    background-repeat: no-repeat;
+    background-color: #161616;
+    background-size: 23%; 
+}
+.bloque{
+    max-width: 1920px;
+    width: 100%;    
+    height: 109vh;
+    display: grid;
+    background-size: cover;
+    background-image: url(/Public/img/16a9/vuelos-privados-al-caribe-y-otras-partes-del-mundo-landscape.jpeg);
+    place-items: center;
+    background-repeat: no-repeat;   
+}
+.bloque__texto{
+    color: #fff;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.7);
+    font-size:3.5em;
+    font-family: var(--titulo);
+}
+.bloque__texto--dorado{
+    color : #c6aa58;
+}
+.fondito{
+    max-width: 1920px;   
+    height: 12vh;
+    background-size: cover;
+    background-image: url(/Public/img/16a9/fondito.jpg);
+    background-repeat: no-repeat;  
+}
+.fondito2{
+    max-width: 1920px;   
+    height: 14vh;
+    background-size: cover;
+    background-image: url(/Public/img/16a9/fondito-blanco.jpeg);
+    background-repeat: no-repeat;  
+    box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.2);
+}
+.fondito__text{
+    text-align: center;
+    color: #fff;
+    font-size:3.5em;
+    padding-top: 12px;
+    font-family: var(--titulo); 
+}
+.fondito2__text{
+    text-align: center;
+    color: #c6aa58;
+    font-size:3.5em;
+    padding-top: 18px;
+    font-family: var(--titulo); 
+}
+.galeria{
+    position: relative;
+    width: 100%;
+    height: 550px;
+    background-color: #fff;
+}
+.galeria__img{
+    position: absolute;
+    width: 35%;
+    height: 80%;
+    border-radius: 5%;
+    top: 50px;
+    left: 70px;
+}
+.galeria__titulo{
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.7);
+    font-size:3em;
+    font-family: var(--titulo);
+    height: 120px;
+    width: 560px;
+    margin: 2px;
+    padding: 10vh 0vh 0vh 82vh;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.galeria__texto{
+    color: #000;
+}
+.galeria__texto--dorado{
+    color : #c6aa58;
+}
+.galeria__inf{
+    width: 560px;
+    margin: 2px;
+    padding: 0vh 0vh 0vh 82vh;
+    display: grid;
+    text-align: left;
+    font-size: 1.2em;
+}
+.galeria__but{
+    color : #fff;
+    background-color: #c6aa58;
+    border: 2px solid #c6aa58;
+    border-radius: 40px;
+    margin: 4px 2px;
+    padding: 10px 30px;
+    box-shadow: 0px 0px 3px 3px rgba(0, 0, 0, 0.4);
+    transition-duration: 0.8s;
+    font-size: 1em;
+}
+.galeria__but:hover{
+    color : #000;
+}
+
+.galeria2{
+    position: relative;
+    width: 100%;
+    height: 550px;
+    background-color: #f6f4ef;
+    box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.2);
+}
+.galeria2__img{
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border-radius: 5%;
+    top: 50px;
+    right: 70px;
+}
+.galeria2__titulo{
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.7);
+    font-size:3em;
+    font-family: var(--titulo);
+    height: 80px;
+    width: 560px;
+    margin: 2px;
+    padding: 18vh 0vh 0vh 18vh;
+    display: flex;
+    text-align: left;
+    justify-content: space-evenly;
+}
+.galeria2__inf{
+    width: 560px;
+    margin: 2px;
+    padding: 0vh 0vh 0vh 18vh;
+    display: grid;
+    text-align: left;
+    font-size: 1.2em;
+}
+.galeria__but1{
+    width: 200px;
+    margin: 2px;
+    padding: 5vh 0vh 0vh 82vh;
+    display: grid;
+    text-align: left;
+}.galeria__but2{
+    width: 200px;
+    margin: 2px;
+    padding: 5vh 0vh 0vh 45vh;
+    display: grid;
+    text-align: left;
+}
+
+.destinos{
+    width: 100%;
+    height: 600px;
+    background-color: #fff;
+}
+.destinos__img{
+    max-width: 1920px;
+    width: 100%;    
+    height: 55vh;
+    background-image: url(/Public/img/16a9/recorte-avion.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #161616;
+    background-size: cover;
+}
+.destinos__texto{
+    width: 900px;
+    margin: 0px;
+    padding: 8vh 0vh 0vh 30vh;
+    display: grid;
+    text-align: left;
+    font-size: 1.3em;
+}
+
+.recomendacion{
+    width: 100%;
+    height: 1640px;
+    background-color: #fff;
+}
+.recomendacion__info{
+    width: 40vw;    
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 7vh 0vh 0vh 10vh;
+    display: grid;
+}
+.recomendacion__info--1{
+    background-image: url(/Public/img/16a9/las-bahamas-landscape.jpg);
+}
+.recomendacion__info--2{
+    background-image: url(/Public/img/16a9/merida-yucatan-landscape.jpg);
+}
+.recomendacion__info--3{
+    background-image: url(/Public/img/16a9/la-habana-landscape.jpg);
+}
+.recomendacion__info--4{
+    background-image: url(/Public/img/16a9/republica-dominicana-landscape.jpg);
+}
+.recomendacion__info--5{
+    background-image: url(/Public/img/16a9/costa-rica-landscape.jpg);
+}
+.recomendacion__titulo{
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.7);
+    font-size:3em;
+    font-family: var(--titulo);
+    height: 80px;
+    width: 800px;
+    margin: 2px;
+    padding: 0vh 0vh 0vh 78vh;
+    display: grid;
+    text-align: center;
+}
+.recomendacion__texto{
+    width: 500px;
+    margin: 0px;
+    padding: 0vh 0vh 0vh 100vh;
+    display: grid;
+    text-align: left;
+    font-size: 1.3em;
+}
+.recomendacion__but{
+    width: 200px;
+    margin: 2px;
+    padding: 2vh 0vh 0vh 120vh;
+    display: grid;
+    text-align: left;
+}
+
+.preguntas-frecuentes{
+    width: 100%;
+    height: 900px;
+    margin-top: 10vh;
+    background-color: #fff;
+}
+.preguntas-frecuentes__info{
+    width: 90vw;    
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    margin: 0vh 0vh 0vh 10vh;
+    display: grid;
+}
+.preguntas-frecuentes__info--1{
+    background-image: url(/Public/img/16a9/las-bahamas-landscape.jpg);
+}
+.preguntas-frecuentes__info--2{
+    background-image: url(/Public/img/16a9/de-que-depende-el-precio-del-vuelo-landscape.webp);
+}
+.preguntas-frecuentes__info--3{
+    background-image: url(/Public/img/16a9/como-se-que-avion-elegir-landscape.webp);
+}
+.preguntas-frecuentes__titulo{
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.7);
+    font-size:1.8em;
+    font-family: var(--titulo);
+    height: 40px;
+    width: 600px;
+    margin: 2px;
+    padding: 0vh 0vh 0vh 0vh;
+    text-align: center;
+    background-color: #f6f4ef;
+    box-shadow: 0px 0px 15px 6px rgba(0, 0, 0, 0.4);
+}
+.preguntas-frecuentes__texto{
+    width: 600px;
+    margin: 0px;
+    padding: 0vh 0vh 0vh 0vh;
+    text-align: left;
+    font-size: 1.3em;
+    display: flex;
+}
