@@ -9,35 +9,40 @@
     <title>Inscripciones Thinkers</title>
 </head>
 <body>
+    <div class="hidden">
     <nav class="barra">
-        <img src="./public/img/logo.webp" alt="Logo Thinkers">
-        <ul class="barra__menu">
-            <li><a class="barra__a" href="">Inicio</a></li>
-            <li><a class="barra__a" href="">Cursos</a>
-                <ul class="barra__baja">
-                    <li class="barra__bajita"><a class="barra__b" href="">Curso UNAM</a></li>
-                    <li class="barra__bajita"><a class="barra__b" href="">Curso IPN</a></li>
-                    <li class="barra__bajita"><a class="barra__b" href="">Curso UANL</a></li>
-                    <li class="barra__bajita"><a class="barra__b" href="">Curso UDEG</a></li>
-                    <li class="barra__bajita"><a class="barra__b" href="">Curso UASLP</a></li>
-                </ul>
-            </li>
-            <li><a href="">Inglés</a></li>
-            <li><a href="">Blog</a></li>
-        </ul>
-        <div class="pie__logos">
-            <div class="pie__redes">
-                <a class="logos" href=""><i class="fa-brands fa-facebook-f"></i></a>
-            </div>
-            <div class="pie__redes">
-                <a class="logos" href=""><i class="fa-brands fa-instagram"></i></a>
-            </div>
-            <div class="pie__redes">
-                <a class="logos" href=""><i class="fa-brands fa-tiktok"></i></a>
+        <div class="barra__img">
+            <img src="./public/img/logo.webp" alt="Logo Thinkers">
+        </div>
+        <div class="barra__derecha">
+            <ul class="barra__menu">
+                <li><a class="barra__a barra__a_orilla" href="">Inicio</a></li>
+                <li><a class="barra__a barra__a_menu" href="">Cursos <i class="fa-solid fa-angle-down"></i></a>
+                    <ul class="barra__baja">
+                        <li><a class="barra__a" href="">Curso UNAM</a></li>
+                        <li><a class="barra__a" href="">Curso IPN</a></li>
+                        <li><a class="barra__a" href="">Curso UANL</a></li>
+                        <li><a class="barra__a" href="">Curso UDEG</a></li>
+                        <li><a class="barra__a" href="">Curso UASLP</a></li>
+                    </ul>
+                </li>
+                <li><a class="barra__a barra__a_centro" href="">Inglés</a></li>
+                <li><a class="barra__a barra__a_orilla" href="">Blog</a></li>
+            </ul>
+            <div class="pie__logos pie__logos_head">
+                <div class="pie__redes">
+                    <a class="logos" href=""><i class="fa-brands fa-facebook-f"></i></a>
+                </div>
+                <div class="pie__redes">
+                    <a class="logos" href=""><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="pie__redes">
+                    <a class="logos" href=""><i class="fa-brands fa-tiktok"></i></a>
+                </div>
             </div>
         </div>
     </nav>
-    <div class="hidden">
+
     <header class="inscripciones">
         <div class="inscripciones__color1">
             <div class="inscripciones__color2">
@@ -47,7 +52,7 @@
             </div>
         </div>
     </header>
-
+    
     <section class="ficha">
         <h2 class="ficha__titulo">Ficha de Inscripción</h2>
         <div class="ficha__textos">
@@ -56,109 +61,111 @@
         </div>
         <p class="ficha__bienvenida negritas">Bienvenido al inicio de tu éxito profesional, bienvenido a Thinkers!!</p>
     </section>
-
+    </div>
     <section class="form">
-        <div class="form__d_p">
-            <h2 class="form__titulo">Datos personales</h2>
-            <form action="" class="form__d_p_f">
-                <div class="form__100">
-                    <label for="fname" class="form__label">Nombre completo:</label><br>
-                    <input type="text" class="form__input" name="form_name" id="form-name" required="required" aria-required="true" min="6" max="100"><br>
-                </div>
-                <div class="form__50">
-                    <label for="fname" class="form__label">Edad:</label><br>
-                    <input type="number" class="form__input" name="form_edad" id="form-edad" required="required" aria-required="true" min="6" max="100">
-                </div>
-                <div class="form__50">
-                    <label for="fname" class="form__label">WhatsApp:</label><br>
-                    <input type="tel" class="form__input" name="form_num" id="form-num" required="required" aria-required="true" min="6" max="100" placeholder="(10 dígitos)"><br>
-                </div>
-                <div class="form__50">
-                    <label for="fname" class="form__label">E-mail:</label><br>
-                    <input type="email" class="form__input" name="form_email" id="form-email" required="required" aria-required="true" min="6" max="100" placeholder="correo@servidor.com"><br>
-                </div>
-                <div class="form__50">
-                    <label for="fname" class="form__label">Facebook:</label><br>
-                    <input type="url" class="form__input" name="form_face" id="form-face" required="required" aria-required="true" min="6" max="100" placeholder="https://facebook.com/"><br>
-                </div>
-                <div class="form__100">
-                    <label for="fname" class="form__label">Domicilio:</label><br>
-                    <input type="text" class="form__input" name="form_dom" id="form-dom" required="required" aria-required="true" min="6" max="100"><br>
-                </div>
-            </form>
-        </div>
-        <div class="form__d_a">
-            <h2 class="form__titulo">Datos académicos</h2>
-            <form action="" class="form__d_a_f">
-                <div class="form__50">
-                    <label for="fname" class="form__label">¿A qué universidad deseas ingresar?</label><br>
-                    <div class="form__selector">
-                        <select type="search" class="form__input" name="form_uni" id="form-uni" required="required" aria-required="true" min="6" max="100">
-                            <option>---Selecciona---</option>
-                            <option value="UNAM">UNAM</option>
-                            <option value="IPN">IPN</option>
-                            <option value="UANL">UANL</option>
-                            <option value="UDEG">UDEG</option>
-                            <option value="UASLP">UASLP</option>
-                        </select>
+        <form action=""> <!-- Ponle el nombre que quieras-->
+            <div class="form__d_p">
+                <h2 class="form__titulo">Datos personales</h2>
+                <div  class="form__d_p_f">
+                    <div class="form__100">
+                        <label for="fname" class="form__label">Nombre completo:</label><br>
+                        <input type="text" class="form__input" name="form_name" id="form-name" required="required" aria-required="true" min="6" max="100"><br>
+                    </div>
+                    <div class="form__50">
+                        <label for="fname" class="form__label">Edad:</label><br>
+                        <input type="number" class="form__input" name="form_edad" id="form-edad" required="required" aria-required="true" min="6" max="100">
+                    </div>
+                    <div class="form__50">
+                        <label for="fname" class="form__label">WhatsApp:</label><br>
+                        <input type="tel" class="form__input" name="form_num" id="form-num" required="required" aria-required="true" min="6" max="100" placeholder="(10 dígitos)"><br>
+                    </div>
+                    <div class="form__50">
+                        <label for="fname" class="form__label">E-mail:</label><br>
+                        <input type="email" class="form__input" name="form_email" id="form-email" required="required" aria-required="true" min="6" max="100" placeholder="correo@servidor.com"><br>
+                    </div>
+                    <div class="form__50">
+                        <label for="fname" class="form__label">Facebook:</label><br>
+                        <input type="url" class="form__input" name="form_face" id="form-face" required="required" aria-required="true" min="6" max="100" placeholder="https://facebook.com/"><br>
+                    </div>
+                    <div class="form__100">
+                        <label for="fname" class="form__label">Domicilio:</label><br>
+                        <input type="text" class="form__input" name="form_dom" id="form-dom" required="required" aria-required="true" min="6" max="100"><br>
                     </div>
                 </div>
-                <div class="form__50">
-                    <label for="fname" class="form__label">¿A qué carrera deseas ingresar?</label><br>
-                    <input type="text" class="form__input" name="form_carrera" id="form-carrera" required="required" aria-required="true" min="6" max="100"><br>
-                </div>
-                <div class="form__100">
-                    <label for="fname" class="form__label">Escuela de procedencia:</label><br>
-                    <input type="text" class="form__input" name="form_escuela" id="form-escuela" required="required" aria-required="true" min="6" max="100"><br>
-                </div>
-                <div class="form__100">
-                    <label for="fname" class="form__label">¿Qué horario te interesa?</label><br>
-                    <div class="form__selector">
-                        <select type="text" class="form__input" name="form_horario" id="form-horario" required="required" aria-required="true" min="6" max="100">
-                            <option>---Selecciona---</option>
-                            <option value="Matutino">Matutino (de 9:00 AM a 12:00 PM)</option>
-                            <option value="Vespertino">Vespertino (de 4:00 PM a 7:00 PM)</option>
-                            <option value="Sabatino">Sabatino (de 8:00 AM a 4:00 PM)</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="form__100">
-                    <label for="fname" class="form__label">Cuéntanos ¿Por qué quieres ingresar a la universidad?</label><br>
-                    <textarea type="text" class="form__input" name="form_cuentanos" id="form-cuentanos" required="required" aria-required="true" min="6" max="100"></textarea>
-                </div>
-            </form>
-        </div>
-        <div class="form__ds_r">
-            <h2 class="form__titulo">Datos de referencia</h2>
-            <form action="" class="form__d_r_f">
-                <div class="form__100">
-                    <label for="fname" class="form__label">¿Cómo supiste de Thinkers?</label><br>
-                    <input type="text" class="form__input" name="form_csdt" id="form-csdt" required="required" aria-required="true" min="6" max="100"><br>
-                </div>
-                <div class="form__50">
-                    <label for="fname" class="form__label">Nombre de tu padre o tutor:</label><br>
-                    <input type="text" class="form__input" name="form_name_padre" id="form-name_padre" required="required" aria-required="true" min="6" max="100"><br>
-                </div>
-                <div class="form__50">
-                    <label for="fname" class="form__label">Celular de tu padre o tutor:</label><br>
-                    <input type="tel" class="form__input" name="form_tel_padre" id="form-tel_padre" required="required" aria-required="true" min="6" max="100"><br>
-                </div>
-            </form>
-        </div>
-        <div class="form__acuerdo">
-            <div class="form__acuerdo-gen">
-                <label for="fname" class="form__label">Acuerdo legal:</label><br>
-                <span class="form__option"> 
-                    <input type="checkbox" class="form__input_check" name="form_check" id="form-check" required="required" aria-required="true">
-                    <label for="fname" class="form__label_check">Al enviar mi ficha, acepto la <a href="">Política de Privacidad</a>, así como los <a href="">Términos y Condiciones</a> de Thinkers.</label>
-                </span>
             </div>
-        </div>
-        <div class="form__boton">
-            <button class="form__enviar">Enviar <i class="fa-regular fa-paper-plane"></i></button>
-        </div>
+            <div class="form__d_a">
+                <h2 class="form__titulo">Datos académicos</h2>
+                <div class="form__d_a_f">
+                    <div class="form__50">
+                        <label for="fname" class="form__label">¿A qué universidad deseas ingresar?</label><br>
+                        <div class="form__selector">
+                            <select type="search" class="form__input" name="form_uni" id="form-uni" required="required" aria-required="true" min="6" max="100">
+                                <option>---Selecciona---</option>
+                                <option value="UNAM">UNAM</option>
+                                <option value="IPN">IPN</option>
+                                <option value="UANL">UANL</option>
+                                <option value="UDEG">UDEG</option>
+                                <option value="UASLP">UASLP</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form__50">
+                        <label for="fname" class="form__label">¿A qué carrera deseas ingresar?</label><br>
+                        <input type="text" class="form__input" name="form_carrera" id="form-carrera" required="required" aria-required="true" min="6" max="100"><br>
+                    </div>
+                    <div class="form__100">
+                        <label for="fname" class="form__label">Escuela de procedencia:</label><br>
+                        <input type="text" class="form__input" name="form_escuela" id="form-escuela" required="required" aria-required="true" min="6" max="100"><br>
+                    </div>
+                    <div class="form__100">
+                        <label for="fname" class="form__label">¿Qué horario te interesa?</label><br>
+                        <div class="form__selector">
+                            <select type="text" class="form__input" name="form_horario" id="form-horario" required="required" aria-required="true" min="6" max="100">
+                                <option>---Selecciona---</option>
+                                <option value="Matutino">Matutino (de 9:00 AM a 12:00 PM)</option>
+                                <option value="Vespertino">Vespertino (de 4:00 PM a 7:00 PM)</option>
+                                <option value="Sabatino">Sabatino (de 8:00 AM a 4:00 PM)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form__100">
+                        <label for="fname" class="form__label">Cuéntanos ¿Por qué quieres ingresar a la universidad?</label><br>
+                        <textarea type="text" class="form__input" name="form_cuentanos" id="form-cuentanos" required="required" aria-required="true" min="6" max="100"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="form__ds_r">
+                <h2 class="form__titulo">Datos de referencia</h2>
+                <div class="form__d_r_f">
+                    <div class="form__100">
+                        <label for="fname" class="form__label">¿Cómo supiste de Thinkers?</label><br>
+                        <input type="text" class="form__input" name="form_csdt" id="form-csdt" required="required" aria-required="true" min="6" max="100"><br>
+                    </div>
+                    <div class="form__50">
+                        <label for="fname" class="form__label">Nombre de tu padre o tutor:</label><br>
+                        <input type="text" class="form__input" name="form_name_padre" id="form-name_padre" required="required" aria-required="true" min="6" max="100"><br>
+                    </div>
+                    <div class="form__50">
+                        <label for="fname" class="form__label">Celular de tu padre o tutor:</label><br>
+                        <input type="tel" class="form__input" name="form_tel_padre" id="form-tel_padre" required="required" aria-required="true" min="6" max="100"><br>
+                    </div>
+                </div>
+            </div>
+            <div class="form__acuerdo">
+                <div class="form__acuerdo-gen">
+                    <label for="fname" class="form__label">Acuerdo legal:</label><br>
+                    <span class="form__option"> 
+                        <input type="checkbox" class="form__input_check" name="form_check" id="form-check" required="required" aria-required="true">
+                        <label for="fname" class="form__label_check">Al enviar mi ficha, acepto la <a href="">Política de Privacidad</a>, así como los <a href="">Términos y Condiciones</a> de Thinkers.</label>
+                    </span>
+                </div>
+            </div>
+            <div class="form__boton">
+                <button class="form__enviar">Enviar <i class="fa-regular fa-paper-plane"></i></button>
+            </div>
+        </form>
     </section>
-
+    <div class="hidden">
     <section class="informacion">
         <div class="informacion__descubrir">
             <ul>Descubrir:
@@ -216,6 +223,6 @@
             </div>
         </div>
     </footer>
-</div>
+    </div>
 </body>
 </html>

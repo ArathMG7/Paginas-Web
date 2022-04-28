@@ -9,10 +9,9 @@
     font-weight: bolder;   
 }
 .hidden{
-    /* overflow: hidden; */
+    overflow: hidden;
     visibility: hidden;
 }
-
 .barra__a{
     display:block;
     text-decoration:none;
@@ -21,44 +20,71 @@
     padding:10px;
     letter-spacing:1px;
 }
-.barra__menu:hover {
-  background:#5b78a7;
+.barra__a_orilla{
+    border-right: 2px solid #129DD9;
+    border-left: 2px solid #129DD9;
+}
+.barra__a_centro{
+    border-left: 2px solid #129DD9;
+}
+.barra__a:hover {
+    background:#129DD9;
+    color: #fff;
+    transition-duration: 0.5s;
 }
 .barra__baja{
     display:none;
     position:absolute;
     top:100%;
+    background-color: rgba(250, 250, 250, 0.6);
+    width: 130px;
 }
-.barra__bajita{
-    float:none;
-    width:150px
+.barra__a_menu{
+    width: 130px;
+}
+.pie__logos_head{
+    padding: 12px 0px 0px 15px;
 }
 .barra__b{
     line-height:120%;
     padding:10px 15px;
 }
 .barra ul li:hover > ul {
-  display:block;
+    display:block;
 }
-
 
 .barra{
     display: flex;
     position: fixed;
-    height: 40px;
+    height: 50px;
     width: 100%;
     list-style:none;
-    justify-content: space-evenly;
+    background-color: rgba(250, 250, 250, 0.6);
+    text-align: center;
+}
+.barra__img{
+    display: flex;
+    height: 50px;
+    padding: 6px 40px;
+}
+.barra__derecha{
+    display: grid;
+    height: 50px;
+    width: 100%;
+    align-content: right;
+    justify-content: right;
 }
 .barra__menu{
     display: flex;
-    position:relative;
-    float:left;
+    float: left;
+    text-align: left;
+    padding-top: 5px;
 }
+
 .inscripciones{
     width: 100%;
     height: 220px;
-    padding-top: 100px;
+    padding-top: 50px;
 }
 .inscripciones__color1{
     width: 100%;
@@ -100,7 +126,7 @@
     font-style: italic;
 }
 .ficha__textos{
-    width: 53%;
+    width: 55%;
     text-align: justify;
     font-size: 1.2em;
     color: #626466;
@@ -113,7 +139,8 @@
     text-align: justify;
     font-size: 1.1em;
     padding: 50px 0px;
-
+    width: 55%;
+    text-align: center;
 }
 
 .form{
@@ -121,10 +148,10 @@
     grid-gap: 1rem;
     justify-content: center;
     grid-template-columns: 80vw;
-    grid-template-rows: auto;
 }
 .form__titulo{
     padding-bottom: 20px;
+    padding-top: 20px;
     color: #FFA300;
     font-size: 1.5em;
     display: grid;
@@ -148,6 +175,7 @@
     color: #626466;
     font-size: 1.2em;
 }
+
 .form__d_p_f{  
     display: grid;
     grid-gap: 1rem;
@@ -287,6 +315,10 @@ li{
     display: grid;
     justify-content: center;
     margin-bottom: 80px;
+}
+.form__enviar:hover{
+    transition-duration: 0.5s;
+    color: #FFA300;
 }
 .fa-paper-plane{
     margin-left: 20px;
