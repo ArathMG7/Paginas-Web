@@ -7,41 +7,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./public/css/ap.css">
     <title>Inscripciones Thinkers</title>
+    <link rel="icon" href="./public/img/favicon-min.png">
 </head>
 <body>
 
-    <nav class="barra">
+    <section class="barra"> 
         <div class="barra__img">
-            <img src="./public/img/logo.webp" alt="Logo Thinkers">
+            <a href="https://thinkersmx.com/" class="barra__img"><img src="./public/img/logo.webp" alt="Logo Thinkers"></a>
         </div>
         <div class="barra__derecha">
-            <ul class="barra__menu">
-                <li><a class="barra__a barra__a_orilla" href="">Inicio</a></li>
-                <li><a class="barra__a barra__a_menu" >Cursos <i class="fa-solid fa-angle-down"></i></a>
-                    <ul class="barra__baja">
-                        <li><a class="barra__a" href="">Curso UNAM</a></li>
-                        <li><a class="barra__a" href="">Curso IPN</a></li>
-                        <li><a class="barra__a" href="">Curso UANL</a></li>
-                        <li><a class="barra__a" href="">Curso UDEG</a></li>
-                        <li><a class="barra__a" href="">Curso UASLP</a></li>
-                    </ul>
-                </li>
-                <li><a class="barra__a barra__a_centro" href="">Inglés</a></li>
-                <li><a class="barra__a barra__a_orilla" href="">Blog</a></li>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="menu">
+                <li><a class="barra__a barra__a_orilla" href="https://thinkersmx.com/">Inicio</a></li>
+                    <li><a class="barra__a barra__a_menu" >Cursos <i class="fa-solid fa-angle-down"></i></a>
+                        <ul class="barra__baja">
+                            <li><a class="barra__a" href="https://thinkersmx.com/curso-unam/">Curso UNAM</a></li>
+                            <li><a class="barra__a" href="https://thinkersmx.com/curso-ipn/">Curso IPN</a></li>
+                            <li><a class="barra__a" href="https://thinkersmx.com/curso-uanl/">Curso UANL</a></li>
+                            <li><a class="barra__a" href="https://thinkersmx.com/curso_udeg/">Curso UDEG</a></li>
+                            <li><a class="barra__a" href="https://thinkersmx.com/curso-uaslp/">Curso UASLP</a></li>
+                        </ul>
+                    </li>
+                <li><a class="barra__a barra__a_centro" href="https://thinkersmx.com/ingles/">Inglés</a></li>
+                <li><a class="barra__a barra__a_orilla" href="https://thinkersmx.com/blog/">Blog</a></li>
             </ul>
             <div class="pie__logos pie__logos_head">
                 <div class="pie__redes">
-                    <a class="logos" href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    <a class="logos" target="blank" href="https://www.facebook.com/thinkersmx/"><i class="fa-brands fa-facebook-f"></i></a>
                 </div>
                 <div class="pie__redes">
-                    <a class="logos" href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a class="logos" target="blank" href="https://www.instagram.com/thinkers_mx/?hl=es-la"><i class="fa-brands fa-instagram"></i></a>
                 </div>
                 <div class="pie__redes">
-                    <a class="logos" href=""><i class="fa-brands fa-tiktok"></i></a>
+                    <a class="logos" target="blank" href="https://www.tiktok.com/@thinkersmx"><i class="fa-brands fa-tiktok"></i></a>
                 </div>
             </div>
         </div>
-    </nav>
+    </section>
 
     <header class="inscripciones">
         <div class="inscripciones__color1">
@@ -149,7 +154,7 @@
                 <label for="fname" class="form__label">Acuerdo legal:</label><br>
                 <span class="form__option"> 
                     <input type="checkbox" class="form__input_check" name="form_check" id="form-check" required="required" aria-required="true">
-                    <label for="fname" class="form__label_check">Al enviar mi ficha, acepto la <a href="">Política de Privacidad</a>, así como los <a href="">Términos y Condiciones</a> de Thinkers.</label>
+                    <label for="fname" class="form__label_check">Al enviar mi ficha, acepto la <a target="blank" href="https://thinkersmx.com/politica-privacidad">Política de Privacidad</a>, así como los <a target="blank" href="https://thinkersmx.com/terminos-y-condiciones/">Términos y Condiciones</a> de Thinkers.</label>
                 </span>
             </div>
             <div class="form__boton">
@@ -160,22 +165,22 @@
 
     <section class="informacion">
         <div class="informacion__descubrir">
-            <ul>Descubrir:</ul>
-                <li><a href="" class="blanco">Inicio</a></li>
-                <li><a href="" class="blanco">Inglés</a></li>
-                <li><a href="" class="blanco">Blog</a></li>
+            <ul class="informacion__ul">Descubrir:</ul>
+                <li><a href="https://thinkersmx.com/" class="blanco">Inicio</a></li>
+                <li><a href="https://thinkersmx.com/ingles/" class="blanco">Inglés</a></li>
+                <li><a href="https://thinkersmx.com/blog/" class="blanco">Blog</a></li>
             
         </div>
         <div class="informacion__cursos">
-            <ul>Cursos de admisión:</ul>
-                <li><a href="" class="blanco">Curso UNAM</a></li>
-                <li><a href="" class="blanco">Curso IPN</a></li>
-                <li><a href="" class="blanco">Curso UANL</a></li>
-                <li><a href="" class="blanco">Curso UDEG</a></li>
-                <li><a href="" class="blanco">Curso UASLP</a></li>         
+            <ul class="informacion__ul">Cursos de admisión:</ul>
+                <li><a href="https://thinkersmx.com/curso-unam/" class="blanco">Curso UNAM</a></li>
+                <li><a href="https://thinkersmx.com/curso-ipn/" class="blanco">Curso IPN</a></li>
+                <li><a href="https://thinkersmx.com/curso-uanl/" class="blanco">Curso UANL</a></li>
+                <li><a href="https://thinkersmx.com/curso_udeg/" class="blanco">Curso UDEG</a></li>
+                <li><a href="https://thinkersmx.com/curso-uaslp/" class="blanco">Curso UASLP</a></li>         
         </div>
         <div class="informacion__contacto">
-            <ul>Contacto:</ul>
+            <ul class="informacion__ul">Contacto:</ul>
                 <li><div class="informacion__segmento">
                     <i class="fa-brands fa-whatsapp"></i>
                     <a href="" class="blanco">444 577 5419</a>
@@ -197,20 +202,20 @@
 
     <footer class="pie"> 
         <div class="pie__textos">
-            <a href=""><p class="pie_sep">TÉRMINOS Y CONDICIONES</p></a>
+            <a href="https://thinkersmx.com/terminos-y-condiciones/" target="blank"><p class="pie_sep">TÉRMINOS Y CONDICIONES</p></a>
         </div>
         <div class="pie__textos">
-            <a href=""><p class="pie_sep">POLÍTICA DE PRIVACIDAD</p></a>
+            <a href="https://thinkersmx.com/politica-privacidad" target="blank"><p class="pie_sep">POLÍTICA DE PRIVACIDAD</p></a>
         </div>
         <div class="pie__logos">
             <div class="pie__redes">
-                <a class="logos" href=""><i class="fa-brands fa-facebook-f"></i></a>
+                <a class="logos" target="blank" href="https://www.facebook.com/thinkersmx/"><i class="fa-brands fa-facebook-f"></i></a>
             </div>
             <div class="pie__redes">
-                <a class="logos" href=""><i class="fa-brands fa-instagram"></i></a>
+                <a class="logos" target="blank" href="https://www.instagram.com/thinkers_mx/?hl=es-la"><i class="fa-brands fa-instagram"></i></a>
             </div>
             <div class="pie__redes">
-                <a class="logos" href=""><i class="fa-brands fa-tiktok"></i></a>
+                <a class="logos" target="blank" href="https://www.tiktok.com/@thinkersmx"><i class="fa-brands fa-tiktok"></i></a>
             </div>
         </div>
     </footer> 

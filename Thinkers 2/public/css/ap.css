@@ -1,3 +1,7 @@
+@font-face {
+    font-family: OldSport;
+    src: url(/public/fonts/OldSport02AthleticNcv-E0gj.ttf);
+}
 *{
 	margin: 0;
 	padding: 0;
@@ -8,10 +12,7 @@
     color: #626466;
     font-weight: bolder;   
 }
-.hidden{
-    overflow: hidden;
-    visibility: hidden;
-}
+
 .barra__a{
     display:block;
     text-decoration:none;
@@ -53,20 +54,127 @@
 .barra ul li:hover > ul {
     display:block;
 }
-
+.menu {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: 5px 0px 0px;
+}
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+    display: block;
+    display: flex;
+    background-color: #129DD9;
+    position: absolute;
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+}
+.menu-button-container {
+    display: none;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+#menu-toggle {
+    display: none;
+}
+#menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+}
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+}
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+}
+@media (max-width: 700px) {
+    .barra__a{
+        border-right: none;
+        border-left: none;
+    }
+    .menu-button-container {
+        display: flex;
+    }
+    .menu {
+        position: absolute;
+        top: 0;
+        margin-top: 50px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        visibility: hidden;
+    }
+    #menu-toggle ~ .menu li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    }
+    #menu-toggle:checked ~ .menu li {
+        border: 1px solid #129DD9;
+        height: 2.5em;     
+        transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+        visibility: visible;
+    }
+    .barra__a{
+        width: 100%;
+    }
+    .menu > li {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        width: 100%;
+        color: #129DD9;
+        background-color: #fff;
+    }
+    .menu > li {
+        border-bottom: 5px solid #129DD9;
+    }
+    .barra__baja{
+        display:none;
+        position:absolute;
+        top:51%;
+        background-color: rgba(250, 250, 250, 0.9);
+        width: 100%;
+        animation-duration: 1s;
+    }
+}
 .barra{
     display: flex;
+    flex-direction: row;
+    align-items: center;
     position: fixed;
     height: 50px;
     width: 100%;
     list-style:none;
     background-color: rgba(255, 255, 255, 0.9);
     text-align: center;
+    height: 50px;
+     padding: 1em;
 }
 .barra__img{
     display: flex;
     height: 50px;
-    padding: 6px 40px;
+    padding: 4px 40px 10px;
 }
 .barra__derecha{
     display: grid;
@@ -84,7 +192,7 @@
 
 .inscripciones{
     width: 100%;
-    height: 220px;
+    height: 180px;
     padding-top: 50px;
 }
 .inscripciones__color1{
@@ -112,7 +220,8 @@
 .inscripciones__titulo{
     color: #fff;
     font-size: 3em;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: OldSport;
+    font-style: italic;
 }
 /* f0b326 dorado*/
 .ficha{
@@ -226,9 +335,10 @@ textarea::-webkit-scrollbar-thumb {
     display: flex;
     grid-gap: 1.5rem;
 }
-ul{
+.informacion__ul{
     font-weight: bold;
     margin-bottom: 10px;
+    margin-top: 20px;
 }
 .blanco{
     color: #fff;
@@ -316,9 +426,19 @@ li{
     .form__enviar{
         padding: 10px 30vh;
     }
+    .barra__img{
+        display: flex;
+        height: 50px;
+        padding: 4px 40px 10px 10px;
+    }
 }
 @media screen and (max-width:540px){
     .form__enviar{
         padding: 10px 10vh;
+    }
+    .barra__img{
+        display: flex;
+        height: 50px;
+        padding: 4px 40px 10px 5px;
     }
 }
