@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<script src="https://kit.fontawesome.com/f3cd46a135.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/f3cd46a135.js" crossorigin="anonymous"></script> <!-- Script para las imagenes de redes sociales -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./public/css/ap.css">
-    <title>Inscripciones Thinkers</title>
-    <link rel="icon" href="./public/img/favicon-min.png">
+    <link rel="stylesheet" href="./public/css/ap.css">      <!-- Link a la hoja de estilos en cascada -->
+    <title>Inscripciones Thinkers</title>   
+    <link rel="icon" href="./public/img/favicon-min.png">   <!-- Imagen que se muestra en la pestaña del navegador -->
 </head>
 <body>
 
-    <section class="barra"> 
-        <div class="barra__img">
+    <section class="barra">     <!-- Sección que contiene el logo, la barra de busqueda y los logos a redes sociales -->
+        <div class="barra__img"> <!-- Contenedor que contiene la imagen del logo  -->
             <a href="https://thinkersmx.com/" class="barra__img barra__img-img"><img src="./public/img/logo.webp" alt="Logo Thinkers"></a>
         </div>
-        <div class="barra__derecha">
-        <input id="menu-toggle" type="checkbox" />
-        <label class='menu-button-container' for="menu-toggle">
+        <div class="barra__derecha"> <!-- Contenedor donde se encuentran la barra de busqueda y los logos de las redes -->
+        <input id="menu-toggle" type="checkbox" />    <!-- Checkbox que hace posible la animación de hamburguesa del menú responsive -->  
+        <label class='menu-button-container' for="menu-toggle">     
             <div class='menu-button'></div>
         </label>
-        <ul class="menu">
+        <ul class="menu">   <!-- Información y puntos de la barra de búsqueda -->  
                 <li><a class="barra__a barra__a_orilla" href="https://thinkersmx.com/">Inicio</a></li>
                     <li><a class="barra__a barra__a_menu" >Cursos <i class="fa-solid fa-angle-down"></i></a>
-                        <ul class="barra__baja">
+                        <ul class="barra__baja">    <!-- Menú dentro de otro menú, con este formato y eqtiquetas se agregan -->  
                             <li><a class="barra__a" href="https://thinkersmx.com/curso-unam/">Curso UNAM</a></li>
                             <li><a class="barra__a" href="https://thinkersmx.com/curso-ipn/">Curso IPN</a></li>
                             <li><a class="barra__a" href="https://thinkersmx.com/curso-uanl/">Curso UANL</a></li>
@@ -34,8 +34,8 @@
                 <li><a class="barra__a barra__a_centro" href="https://thinkersmx.com/ingles/">Inglés</a></li>
                 <li><a class="barra__a barra__a_orilla" href="https://thinkersmx.com/blog/">Blog</a></li>
             </ul>
-            <div class="pie__logos pie__logos_head">
-                <div class="pie__redes">
+            <div class="pie__logos pie__logos_head">    <!-- Uso la misma etiqueta de imagenes aquí y en el pie de pagina -->  
+                <div class="pie__redes">    <!-- Contenedor de la imagen con link -->
                     <a class="logos" target="blank" href="https://www.facebook.com/thinkersmx/"><i class="fa-brands fa-facebook-f"></i></a>
                 </div>
                 <div class="pie__redes">
@@ -48,59 +48,59 @@
         </div>
     </section>
 
-    <header class="inscripciones">
-        <div class="inscripciones__color1">
+    <header class="inscripciones">  <!-- Barra de colores "degradados" donde está el titulo -->
+        <div class="inscripciones__color1"> <!-- Cada etiqueta tiene un color para hacer el efecto -->
             <div class="inscripciones__color2">
                 <div class="inscripciones__color3">
-                   <h1 class="inscripciones__titulo">INSCRIPCIONES</h1>
+                   <h1 class="inscripciones__titulo">INSCRIPCIONES</h1> <!-- Titulo de la página -->
                 </div>
             </div>
         </div>
     </header>
     
-    <section class="ficha">
-        <h2 class="ficha__titulo">Ficha de Inscripción</h2>
-        <div class="ficha__textos">
+    <section class="ficha"> <!-- Sección donde vienen los titulos y textos antes del formulario -->
+        <h2 class="ficha__titulo">Ficha de Inscripción</h2> <!-- Titulo general de la sección -->
+        <div class="ficha__textos"> <!-- Contenedor para ambos textos -->
             <p class="ficha__texto">Hola Pensador, estás a un paso de pertenecer a la comunidad de pensadores número 1; en el siguiente formulario debes ingresar datos personales, académicos y de referencia, todos ellos nos ayudan a darte un servicio mucho más personalizado, a conocerte un poco mejor, así como llevar un mejor control de tus avances y de nuestra comunidad de pensadores.</p>
             <p class="ficha__texto negritas">Si tienes una extensión que bloquea anuncios o tu navegador bloquea publicidad, por favor desactiva esta función o extensión temporalmente para enviar tu ficha sin problemas.</p>
         </div>
-        <p class="ficha__bienvenida negritas">Bienvenido al inicio de tu éxito profesional, bienvenido a Thinkers!!</p>
+        <p class="ficha__bienvenida negritas">Bienvenido al inicio de tu éxito profesional, bienvenido a Thinkers!!</p> <!-- Texto final de bienvenida -->
     </section>
 
-    <section class="form">
-        <form action=""> 
+    <section class="form">  <!-- Formulario de datos del aspirante -->
+        <form action="" method="post">    <!-- Etiqueta que marca todo el formulario y a donde irá -->
             <h2 class="form__titulo">Datos personales</h2>
-            <div  class="form__d_f">
-                <div class="form__100">
+            <div  class="form__d_f">    <!-- Primera sección del formulario -->
+                <div class="form__100">  <!-- Form__100 indica que el input ocupará el 100% del espacio -->
                     <label for="fname" class="form__label">Nombre completo:</label><br>
                     <input type="text" class="form__input" name="form_name" id="form-name" required="required" aria-required="true" min="6" max="100"><br>
                 </div>
-                <div class="form__50">
+                <div class="form__50">  <!-- Form__50 indica que el input ocupará el 50% del espacio -->
                     <label for="fname" class="form__label">Edad:</label><br>
                     <input type="number" class="form__input" name="form_edad" id="form-edad" required="required" aria-required="true" min="6" max="100">
                 </div>
-                <div class="form__50">
+                <div class="form__50">  <!-- Form__50 indica que el input ocupará el 50% del espacio -->
                     <label for="fname" class="form__label">WhatsApp:</label><br>
                     <input type="tel" class="form__input" name="form_num" id="form-num" required="required" aria-required="true" min="6" max="100" placeholder="(10 dígitos)"><br>
                 </div>
-                <div class="form__50">
+                <div class="form__50">  <!-- Form__50 indica que el input ocupará el 50% del espacio -->
                     <label for="fname" class="form__label">E-mail:</label><br>
                     <input type="email" class="form__input" name="form_email" id="form-email" required="required" aria-required="true" min="6" max="100" placeholder="correo@servidor.com"><br>
                 </div>
-                <div class="form__50">
+                <div class="form__50">  <!-- Form__50 indica que el input ocupará el 50% del espacio -->
                     <label for="fname" class="form__label">Facebook:</label><br>
                     <input type="url" class="form__input" name="form_face" id="form-face" required="required" aria-required="true" min="6" max="100" value="https://facebook.com/" placeholder="https://facebook.com/"><br>
                 </div>
-                <div class="form__100">
+                <div class="form__100"> <!-- Form__100 indica que el input ocupará el 100% del espacio -->
                     <label for="fname" class="form__label">Domicilio:</label><br>
                     <input type="text" class="form__input" name="form_dom" id="form-dom" required="required" aria-required="true" min="6" max="100"><br>
                 </div>
             </div>
             <h2 class="form__titulo">Datos académicos</h2>
-            <div class="form__d_f">
-                <div class="form__50">
+            <div class="form__d_f">     <!-- Segunda sección del formulario -->
+                <div class="form__50">  <!-- Form__50 indica que el input ocupará el 50% del espacio -->
                     <label for="fname" class="form__label">¿A qué universidad deseas ingresar?</label><br>
-                    <div class="form__selector">
+                    <div class="form__selector">    <!-- Un contenedor para hacer una casilla de distintas opciones -->
                         <select type="search" class="form__input" name="form_uni" id="form-uni" required="required" aria-required="true" min="6" max="100">
                             <option>---Selecciona---</option>
                             <option value="UNAM">UNAM</option>
@@ -111,17 +111,17 @@
                         </select>
                     </div>
                 </div>
-                <div class="form__50">
+                <div class="form__50"> <!-- Form__50 indica que el input ocupará el 50% del espacio -->
                     <label for="fname" class="form__label">¿A qué carrera deseas ingresar?</label><br>
                     <input type="text" class="form__input" name="form_carrera" id="form-carrera" required="required" aria-required="true" min="6" max="100"><br>
                 </div>
-                <div class="form__100">
+                <div class="form__100"> <!-- Form__100 indica que el input ocupará el 100% del espacio -->
                     <label for="fname" class="form__label">Escuela de procedencia:</label><br>
                     <input type="text" class="form__input" name="form_escuela" id="form-escuela" required="required" aria-required="true" min="6" max="100"><br>
                 </div>
-                <div class="form__100">
+                <div class="form__100"> <!-- Form__100 indica que el input ocupará el 100% del espacio -->
                     <label for="fname" class="form__label">¿Qué horario te interesa?</label><br>
-                    <div class="form__selector">
+                    <div class="form__selector">    <!-- Un contenedor para hacer una casilla de distintas opciones -->
                         <select type="text" class="form__input" name="form_horario" id="form-horario" required="required" aria-required="true" min="6" max="100">
                             <option>---Selecciona---</option>
                             <option value="Matutino">Matutino (de 9:00 AM a 12:00 PM)</option>
@@ -130,66 +130,66 @@
                         </select>
                     </div>
                 </div>
-                <div class="form__100">
+                <div class="form__100"> <!-- Sección del textarea -->
                     <label for="fname" class="form__label">Cuéntanos ¿Por qué quieres ingresar a la universidad?</label><br>
                     <textarea type="text" class="form__input" name="form_cuentanos" id="form-cuentanos" required="required" aria-required="true" min="6" max="100"></textarea>
                 </div>
             </div>
             <h2 class="form__titulo">Datos de referencia</h2>
-            <div class="form__d_f">
+            <div class="form__d_f">  <!-- Tercera sección del formulario -->
                 <div class="form__100">
                     <label for="fname" class="form__label">¿Cómo supiste de Thinkers?</label><br>
                     <input type="text" class="form__input" name="form_csdt" id="form-csdt" required="required" aria-required="true" min="6" max="100"><br>
                 </div>
-                <div class="form__50">
+                <div class="form__50">  <!-- Form__50 indica que el input ocupará el 50% del espacio -->
                     <label for="fname" class="form__label">Nombre de tu padre o tutor:</label><br>
                     <input type="text" class="form__input" name="form_name_padre" id="form-name_padre" required="required" aria-required="true" min="6" max="100"><br>
                 </div>
-                <div class="form__50">
+                <div class="form__50">  <!-- Form__50 indica que el input ocupará el 50% del espacio -->
                     <label for="fname" class="form__label">Celular de tu padre o tutor:</label><br>
                     <input type="tel" class="form__input" name="form_tel_padre" id="form-tel_padre" required="required" aria-required="true" min="6" max="100"><br>
                 </div>
             </div>
-            <div class="form__acuerdo">
+            <div class="form__acuerdo"> <!-- Sección del chackbox de terminos y condiciones -->
                 <label for="fname" class="form__label">Acuerdo legal:</label><br>
-                <span class="form__option"> 
+                <span class="form__option">    <!-- Textos con links y el checkbox -->
                     <input type="checkbox" class="form__input_check" name="form_check" id="form-check" required="required" aria-required="true">
                     <label for="fname" class="form__label_check">Al enviar mi ficha, acepto la <a target="blank" href="https://thinkersmx.com/politica-privacidad">Política de Privacidad</a>, así como los <a target="blank" href="https://thinkersmx.com/terminos-y-condiciones/">Términos y Condiciones</a> de Thinkers.</label>
                 </span>
             </div>
-            <div class="form__boton">
-                <button class="form__enviar">Enviar <i class="fa-regular fa-paper-plane"></i></button>
+            <div class="form__boton">   <!-- Contenedor para darle dormato al botón de enviar -->
+                <button class="register">Enviar <i class="fa-regular fa-paper-plane"></i></button>
             </div>
         </form>
     </section>
 
-    <section class="informacion">
+    <section class="informacion">   <!-- Sección que muestra la información extra y links de conveniencia -->
         <div class="informacion__descubrir">
-            <ul class="informacion__ul">Descubrir:</ul>
+            <ul class="informacion__ul">Descubrir:</ul> <!-- Lista con los links principales -->
                 <li><a href="https://thinkersmx.com/" class="blanco">Inicio</a></li>
                 <li><a href="https://thinkersmx.com/ingles/" class="blanco">Inglés</a></li>
                 <li><a href="https://thinkersmx.com/blog/" class="blanco">Blog</a></li>
             
         </div>
         <div class="informacion__cursos">
-            <ul class="informacion__ul">Cursos de admisión:</ul>
+            <ul class="informacion__ul">Cursos de admisión:</ul>    <!-- Lista hacía los otros cursos -->
                 <li><a href="https://thinkersmx.com/curso-unam/" class="blanco">Curso UNAM</a></li>
                 <li><a href="https://thinkersmx.com/curso-ipn/" class="blanco">Curso IPN</a></li>
                 <li><a href="https://thinkersmx.com/curso-uanl/" class="blanco">Curso UANL</a></li>
                 <li><a href="https://thinkersmx.com/curso_udeg/" class="blanco">Curso UDEG</a></li>
                 <li><a href="https://thinkersmx.com/curso-uaslp/" class="blanco">Curso UASLP</a></li>         
         </div>
-        <div class="informacion__contacto">
-            <ul class="informacion__ul">Contacto:</ul>
-                <li><div class="informacion__segmento">
+        <div class="informacion__contacto"> <!-- Menú con los datos de contacto -->
+            <ul class="informacion__ul">Contacto:</ul>  <!-- Lista de metodos -->
+                <li><div class="informacion__segmento"> <!-- Contenedor para el texto con link y la imagen -->
                     <i class="fa-brands fa-whatsapp"></i>
                     <a href="" class="blanco">444 577 5419</a>
                 </div></li>
-                <li><li><div class="informacion__segmento">
+                <li><li><div class="informacion__segmento"> <!-- Contenedor para el texto con link y la imagen -->
                     <i class="fa-solid fa-envelope"></i>
                     <a href="" class="blanco">contacto@thinkersmx.com</a>
                 </div></li>
-                <li><li><div class="informacion__segmento">
+                <li><li><div class="informacion__segmento"> <!-- Contenedor para el texto con link y la imagen -->
                     <i class="fa-solid fa-location-dot"></i>
                     <div class="segmento">
                         <p>Valentin Gama #515</p>
@@ -200,14 +200,14 @@
         </div>
     </section>
 
-    <footer class="pie"> 
-        <div class="pie__textos">
+    <footer class="pie">    <!-- Pie de pagina con los terminos y condiciones y redes sociales -->
+        <div class="pie__textos">   <!-- Contenedor para los links de terminos y condiciones  -->
             <a href="https://thinkersmx.com/terminos-y-condiciones/" target="blank"><p class="pie_sep">TÉRMINOS Y CONDICIONES</p></a>
         </div>
         <div class="pie__textos">
             <a href="https://thinkersmx.com/politica-privacidad" target="blank"><p class="pie_sep">POLÍTICA DE PRIVACIDAD</p></a>
         </div>
-        <div class="pie__logos">
+        <div class="pie__logos">    <!-- Contenedor para los logos de las redes sociales con su link -->
             <div class="pie__redes">
                 <a class="logos" target="blank" href="https://www.facebook.com/thinkersmx/"><i class="fa-brands fa-facebook-f"></i></a>
             </div>

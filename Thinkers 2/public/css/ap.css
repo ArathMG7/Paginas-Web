@@ -1,14 +1,14 @@
-@font-face {
+@font-face {    /* Importación de la fuente nueva */
     font-family: OldSport;
     src: url(/public/fonts/OldSport02AthleticNcv-E0gj.ttf);
 }
-*{
+*{  /* Uso de margenes y la fuente general */
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
-.negritas{
+.negritas{  /* Funcion que vuelve un texto a negritas */
     color: #626466;
     font-weight: bolder;   
 }
