@@ -169,7 +169,7 @@
     background-color: rgba(255, 255, 255, 0.9);
     text-align: center;
     height: 50px;
-     padding: 1em;
+    padding: 1em;
 }
 .barra__img{
     display: flex;
@@ -246,7 +246,6 @@
     line-height: 30px;
 }
 .ficha__bienvenida{
-    text-align: justify;
     font-size: 1.1em;
     padding: 50px 0px;
     width: 55%;
@@ -410,6 +409,14 @@ li{
         font-size: 0.8em;
         padding: 0px 10px 50px;
     }
+    .ficha__textos{
+        width: 80%;
+        text-align: left;
+    }
+    .ficha__bienvenida{
+        width: 80%;
+        text-align: center;
+    }
 }
 @media screen and (max-width:880px){
     .informacion{
@@ -440,5 +447,10 @@ li{
         display: flex;
         height: 50px;
         padding: 4px 40px 10px 5px;
+    }
+}
+@media screen and (max-width:380px){
+    .barra__img{
+        padding: 4px 0px 10px;
     }
 }
