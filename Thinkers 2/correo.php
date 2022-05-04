@@ -1,6 +1,6 @@
 <?php
     $nombre = 'Fulanito Fulanitoso';
-    
+    $info = 'Podemos hacer el perro de lo que queramos por que el perro hace guau gauu';
     echo $plantilla = "
     <head>
   <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
@@ -86,7 +86,7 @@ body { margin-left: 0.7in; margin-right: 0.7in; margin-top: 0.75in; margin-botto
     <tbody>
       <tr class='row1'>
         <td class='column0 style2 null'></td>
-        <td class='column1 style3 s style3' colspan='5'>Imagen ilustrativa jijijijijijijijijijijijijijijijijijiji :D</td>
+        <td class='column1 style3 s style3' colspan='5'><img src='https://thinkersmx.com/wp-content/uploads/2021/01/logo_thinkers_525x144.png'></td>
         <td class='column6 style2 null'></td>
       </tr>
       <tr class='row2'>
@@ -155,7 +155,7 @@ body { margin-left: 0.7in; margin-right: 0.7in; margin-top: 0.75in; margin-botto
       <tr class='row11'>
         <td class='column0 style7 s style7' colspan='3'>Facebook</td>
         <td class='column3 style6 null'></td>
-        <td class='column4 style8 s style8' colspan='3' rowspan='2'>Me enteré de Thinkers por medio de:</td>
+        <td class='column4 style8 s style8' colspan='3' rowspan='2'>Me enteré de Thinkers por medio de: $info</td>
       </tr>
       <tr class='row12'>
         <td class='column0 style7 s style7' colspan='3'>Edad</td>
@@ -192,7 +192,7 @@ body { margin-left: 0.7in; margin-right: 0.7in; margin-top: 0.75in; margin-botto
         <td class='column0 style7 s style7' colspan='7'>Escuea de Procedencia:</td>
       </tr>
       <tr class='row19'>
-        <td class='column0 style8 s style8' colspan='7'>Quiero ingresar a la universidad porque:</td>
+        <td class='column0 style8 s style8' colspan='7'>Quiero ingresar a la universidad porque: $info</td>
       </tr>
       <tr class='row21'>
         <td class='column0 style2 null'></td>
